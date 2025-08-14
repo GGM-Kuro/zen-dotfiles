@@ -1,0 +1,31 @@
+# Solo aplicar si es Bash
+$if Bash
+
+# ---------------------------
+# 🖱️ Autocompletado y colores
+# ---------------------------
+set colored-stats On              # Colores al listar completados
+set completion-ignore-case On     # Ignorar mayúsculas/minúsculas
+set show-all-if-ambiguous On      # Completar directamente si no hay ambigüedad
+set visible-stats On              # Mostrar / para dir, * para ejecutables
+
+# ---------------------------
+# 📜 Historial inteligente
+# ---------------------------
+"\e[A": history-search-backward   # Flecha arriba busca solo coincidencias
+"\e[B": history-search-forward    # Flecha abajo busca solo coincidencias
+
+# ---------------------------
+# ⌨️ Atajos útiles
+# ---------------------------
+"\C-l": clear-screen
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+"\C-p": previous-history
+"\C-n": next-history
+
+# Completar con Tab
+TAB: menu-complete
+"\e[Z": menu-complete-backward    # Shift+Tab para completar hacia atrás
+
+$endif

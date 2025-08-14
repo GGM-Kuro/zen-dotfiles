@@ -1,0 +1,21 @@
+[[ ! -d "${HOME}/.dotfiles" ]] || export DOTFILES_PATH="${HOME}/.dotfiles"
+
+for f in "$DOTFILES_PATH"/shell/*.sh; do
+    [ -f "$f" ] && source "$f"
+done
+
+if [ -n "$ZSH_VERSION" ]; then
+	
+	eval "$(zoxide init zsh --cmd cd)"
+	for f in "$DOTFILES_PATH"/shell/zsh/*.sh; do
+    		[ -f "$f" ] && source "$f"
+	done
+else 
+
+	eval "$(zoxide init bash --cmd cd)"
+	for f in "$DOTFILES_PATH"/shell/bash/*.sh; do
+    		[ -f "$f" ] && source "$f"
+	done
+fi	
+
+
