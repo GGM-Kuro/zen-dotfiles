@@ -1,0 +1,20 @@
+- clean: ['~']
+
+- defaults:
+    link:
+      create: true
+      force: true
+
+- create:
+    - $DOTFILES_PATH/shell/bash/completions
+    - $DOTFILES_PATH/shell/bash/themes
+
+- link
+    ~/.bash_profile: shell/bash/.bash_profile
+    ~/.bashrc: shell/bash/.bashrc
+    ~/.zshrc: shell/zsh/.zshrc
+    ~/.inputrc: shell/.inputrc
+
+
+- shell:
+  - [cp -r $DOTFILES_PATH/os/alacritty /mnt/c/Users/$USER/AppData/Roaming/, copy alacritty config]
