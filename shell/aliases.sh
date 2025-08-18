@@ -4,7 +4,7 @@ alias v='nvim'
 alias vim='nvim'
 alias vi='nvim'
 
-# Enable aliases 
+# System 
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -17,3 +17,4 @@ alias cat='bat'
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
 alias .f='cd $DOTFILES_PATH'
+alias t=tmux

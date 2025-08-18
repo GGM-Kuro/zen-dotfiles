@@ -18,4 +18,6 @@ else
 	done
 fi	
 
+eval "$($(brew --prefix)/bin/brew shellenv)"
+
 
