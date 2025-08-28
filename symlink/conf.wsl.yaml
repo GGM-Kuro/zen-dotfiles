@@ -1,3 +1,4 @@
 - shell:
-  - [cp -r $DOTFILES_PATH/os/alacritty /mnt/c/Users/$USER/AppData/Roaming/, copy alacritty config]
+  - [bash -c 'cp -r "$HOME/.dotfiles/os/alacritty" "/mnt/c/Users/$USER/AppData/Roaming/"', copy>
+
 

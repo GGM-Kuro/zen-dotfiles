@@ -22,3 +22,6 @@ PS1='[\u@\h \W]\$ '
 
 # zsh
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+. "$HOME/.local/bin/env"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
