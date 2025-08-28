@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+
 CONFIG="symlink/conf.yaml"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV_DIR="${BASEDIR}/.venv"
@@ -14,10 +15,14 @@ if ! command -v brew &> /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # Configurar el entorno para brew (ajusta según tu shell)
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-else
-    echo "Homebrew ya está instalado."
 fi
+
+# Cargar brew en el PATH inmediatamente, incluso si acaba de instalarse
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+echo "Homebrew configurado."
 
 # --- Verificar y actualizar dependencias ---
 
@@ -26,19 +31,23 @@ echo "Verificando dependencias con pacman y brew..."
 # Actualizar lista de paquetes
 sudo pacman -Sy --noconfirm
 
+
 # Instalar zsh si no está
 if ! command -v zsh &>/dev/null; then
     echo "Instalando zsh con pacman..."
     sudo pacman -S --noconfirm zsh
 else
-    echo "zsh ya esta instalado."
+    echo "zsh ya está instalado."
 fi
 
+
 echo "Instalando herramientas necesarias..."
+
 
 install_if_missing() {
     if ! command -v "$1" &> /dev/null; then
         echo "Instalando $1..."
+
         sudo pacman -S --noconfirm "$1"
     else
         echo "$1 ya está instalado."
@@ -50,7 +59,6 @@ install_if_missing fzf
 install_if_missing zoxide
 install_if_missing lsd
 install_if_missing bat
-
 
 # Cambiar shell por defecto a zsh si no es
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
@@ -74,10 +82,12 @@ fi
 
 if ! command -v pip &>/dev/null && ! python -m pip --version &>/dev/null; then
     echo "Instalando python-pip..."
+
     sudo pacman -S --noconfirm python-pip
 else
     echo "pip ya está instalado."
 fi
+
 
 # Instalar uv si no está (usando brew si está, si no, método oficial)
 if ! command -v uv &>/dev/null; then
@@ -93,7 +103,15 @@ else
     echo "uv ya está instalado."
 fi
 
+# Asegurar que uv está disponible en esta sesión
+
+if ! command -v uv &>/dev/null; then
+    echo "Error: uv no está disponible después de la instalación. Abortando."
+    exit 1
+fi
+
 # --- Crear y activar entorno virtual ---
+
 
 cd "${BASEDIR}"
 
@@ -103,6 +121,7 @@ if [ ! -d "${VENV_DIR}" ]; then
 else
     echo "Entorno virtual ya existe en ${VENV_DIR}."
 fi
+
 
 echo "Activando entorno virtual..."
 # shellcheck source=/dev/null
@@ -115,8 +134,6 @@ echo "Actualizando pip e instalando dotbot en entorno virtual..."
 python -m pip install --upgrade pip dotbot
 
 # --- Ejecutar dotbot ---
-
-echo "Ejecutando dotbot con config ${CONFIG}..."
 
 echo "Ejecutando dotbot con config ${CONFIG}..."
 "${VENV_DIR}/bin/dotbot" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
