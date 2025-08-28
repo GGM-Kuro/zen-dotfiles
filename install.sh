@@ -79,6 +79,7 @@ install_if_missing() {
 
 # Básicos
 install_if_missing zsh
+install_if_missing tmux
 install_if_missing curl
 install_if_missing git
 install_if_missing python3
