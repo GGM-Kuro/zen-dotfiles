@@ -35,3 +35,5 @@ eval "$(zoxide init --cmd cd zsh)"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+if [ -e /home/kuro/.nix-profile/etc/profile.d/nix.sh ]; then . /home/kuro/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
