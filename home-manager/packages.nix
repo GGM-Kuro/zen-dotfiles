@@ -15,6 +15,7 @@
         zoxide
         bash
         cargo
+        uv
 
         # programs
         fastfetch
