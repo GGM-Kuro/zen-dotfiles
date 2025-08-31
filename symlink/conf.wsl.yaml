@@ -1,4 +1,0 @@
-- shell:
-  - [bash -c 'cp -r "$HOME/.dotfiles/os/alacritty" "/mnt/c/Users/$USER/AppData/Roaming/"', copy>
-
-
