@@ -4,7 +4,8 @@ alias v='nvim'
 alias vim='nvim'
 alias vi='nvim'
 
-# System 
+# System
+
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -14,7 +15,9 @@ alias l='lsd --group-dirs=first'
 alias lsa='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias cat='bat'
+
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
+
 alias .f='cd $DOTFILES_PATH'
 alias t=tmux

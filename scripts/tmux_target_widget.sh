@@ -12,6 +12,7 @@ COLOR_RED="#BF616A"
 COLOR_PURPLE="#b48ead"
 
 # Si no existe el archivo
+
 if [ ! -f "$TARGET_FILE" ]; then
     echo "#[fg=$COLOR_BG_BLUE,bg=$COLOR_BG_DARK]#[fg=$COLOR_WHITE,bg=$COLOR_BG_BLUE] No target #[fg=$COLOR_BG_DARK,bg=$COLOR_BG_BLUE]#[default]"
     exit 0
@@ -23,6 +24,7 @@ CONTENT=$(tr -d '\r' < "$TARGET_FILE" | sed 's/^ *//;s/ *$//')
 
 # Si está vacío realmente
 if [ -z "$CONTENT" ]; then
+
     echo "#[fg=$COLOR_BG_DARK,bg=$COLOR_BG_BLUE]#[default]#[fg=$COLOR_BG_DARK,bg=$COLOR_BG_BLUE]   #[fg=$COLOR_BG_DARK,bg=$COLOR_BG_BLUE]"
     exit 0
 

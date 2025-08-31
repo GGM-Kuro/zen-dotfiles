@@ -1,0 +1,19 @@
+[[ ! -f "$DOTFILES_PATH/shell/zsh/themes/p10k.zsh" ]] || source $DOTFILES_PATH/shell/zsh/themes/p10k.zsh
+
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+for f in "$DOTFILES_PATH"/shell/*.sh; do
+    [ -f "$f" ] && source "$f"
+done
+
+
+for f in "$DOTFILES_PATH"/shell/zsh/*.sh; do
+	[ -f "$f" ] && source "$f"
+done
+
+
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+      source "$HOME/.nix-profile/etc/profile.d/nix.sh"
+fi

@@ -1,7 +1,9 @@
 set -euo pipefail
 
 
+
 ##? Short the current $PWD
+
 ##?
 ##? Usage:
 ##?    short_pwd
