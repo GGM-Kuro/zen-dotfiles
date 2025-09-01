@@ -8,7 +8,7 @@
         # ------------------------------------------------------------------------------
 
         export WINHOME="/mnt/c/Users/kuro"
-        export PROJECTS="$WINHOME/Documents/proyectos"
+        export PROJECTS="$HOME/code"
 
         if [[ "$(uname)" == "Darwin" ]]; then
           export BREW_BIN="/opt/homebrew/bin"
