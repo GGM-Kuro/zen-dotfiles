@@ -12,6 +12,12 @@ in {
        zsh = import ./programs/zsh.nix {
         inherit config;
        };
+       git = import ./programs/git.nix {
+        inherit config;
+       };
+       tmux = import ./programs/tmux.nix {
+        inherit config pkgs;
+       };
        bash = import ./programs/bash.nix {
         inherit config;
        };
