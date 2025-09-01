@@ -18,7 +18,7 @@ alias cat='bat'
 
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
-alias code='cd $PROJECTS'
+alias code='cd $PROJECTS && clear'
 
 alias .f='cd $DOTFILES_PATH'
 alias t=tmux
