@@ -19,6 +19,7 @@
 
         # programs
         fastfetch
+        lazygit
         posting
         neovim
         tmux
