@@ -19,6 +19,7 @@
 
         # programs
         fastfetch
+        posting
         neovim
         tmux
         zsh
