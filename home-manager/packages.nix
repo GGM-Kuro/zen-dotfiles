@@ -12,9 +12,11 @@
         lsd
         fzf
         git
+	ripgrep
         zoxide
         bash
         cargo
+	openssh
         uv
 
         # programs

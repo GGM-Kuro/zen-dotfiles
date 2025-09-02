@@ -33,9 +33,8 @@
             config.allowUnfree = true;
           };
         in
-          home-manager.lib.homeManagerConfiguration {
+	    home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
-
             extraSpecialArgs = {
               inherit unstablePkgs;
             };
@@ -48,6 +47,9 @@
                   username = user;
                   homeDirectory = "/home/${user}";
                   stateVersion = stateVersion;
+		  sessionVariables = {
+                      SHELL = "${pkgs.zsh}/bin/zsh";
+		  };
                 };
 
 
