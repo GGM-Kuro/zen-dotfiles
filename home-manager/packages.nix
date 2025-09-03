@@ -1,34 +1,35 @@
 {
-    config,
-    pkgs,
-    lib,
-    ...
-}: {
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
 
-    home.packages = with pkgs; [
+  home.packages = with pkgs; [
 
-      # system utilities
-        bat
-        lsd
-        fzf
-        git
-    	# ripgrep
-        zoxide
-        bash
-        cargo
-	    openssh
-        unzip
-        uv
+    # system utilities
+    bat
+    lsd
+    fzf
+    git
+    # ripgrep
+    zoxide
+    bash
+    cargo
+    openssh
+    unzip
+    uv
 
-        # programs
-        fastfetch
-        lazygit
-        posting
-        tmux
-        zsh
-        yazi
+    # programs
+    fastfetch
+    lazygit
+    posting
+    tmux
+    zsh
+    yazi
 
-        # fonts
-        nerd-fonts.mononoki
-    ];
+    # fonts
+    nerd-fonts.mononoki
+  ];
 }
