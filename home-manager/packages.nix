@@ -12,7 +12,7 @@
         lsd
         fzf
         git
-    	ripgrep
+    	# ripgrep
         zoxide
         bash
         cargo
