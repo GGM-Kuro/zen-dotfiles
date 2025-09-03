@@ -91,19 +91,36 @@
         "nixpkgs": [
           "nixpkgs"
         ],
+        "plugins-menu.nvim": "plugins-menu.nvim",
         "plugins-snakcs.nvim": "plugins-snakcs.nvim"
       },
       "locked": {
-        "lastModified": 1756865089,
-        "narHash": "sha256-BW8S364/9EnAtOiPzGUIL/4SO4VZxlC/3yImWvVj1vg=",
+        "lastModified": 1756878154,
+        "narHash": "sha256-ttayIDhwuzjU+5oLocFO3K4hHYYiiCgEZOLBH82mUnM=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "1f6b41897a29f98945c0fee640d3e4f9fe3a4edc",
+        "rev": "95f72a2aed4040d855a406e90d2780fec6fd6b70",
         "type": "github"
       },
       "original": {
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
+        "type": "github"
+      }
+    },
+    "plugins-menu.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1748784363,
+        "narHash": "sha256-4GfQ6Mo32rsoQAXKZF9Bpnm/sms2hfbrTldpLp5ySoY=",
+        "owner": "nvzone",
+        "repo": "menu",
+        "rev": "7a0a4a2896b715c066cfbe320bdc048091874cc6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvzone",
+        "repo": "menu",
         "type": "github"
       }
     },
