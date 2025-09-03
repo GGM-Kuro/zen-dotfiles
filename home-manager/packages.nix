@@ -17,6 +17,7 @@
         bash
         cargo
 	    openssh
+        unzip
         uv
 
         # programs

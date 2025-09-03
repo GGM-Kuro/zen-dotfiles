@@ -42,10 +42,9 @@
               inherit unstablePkgs;
             };
 
-
+            
             modules = [
               {
-
                 home = {
                   username = user;
                   packages = [
@@ -53,9 +52,6 @@
                   ];
                   homeDirectory = "/home/${user}";
                   stateVersion = stateVersion;
-		  sessionVariables = {
-                      SHELL = "${pkgs.zsh}/bin/zsh";
-		  };
                 };
 
 
