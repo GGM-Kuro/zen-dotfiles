@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nvim-config = {
+      url = "github:GGM-Kuro/zen-nvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,14 +16,13 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, nixpkgs-unstable, home-manager, flake-utils, ... }:
+  outputs = { nixpkgs, nixpkgs-unstable, home-manager, nvim-config,  flake-utils, ... }:
     let
 
       mkHomeConfig = system:
         let
           stateVersion = "23.05";
           user = "kuro";
-
           pkgs = import nixpkgs {
 
             inherit system;
@@ -45,6 +48,9 @@
 
                 home = {
                   username = user;
+                  packages = [
+                    nvim-config.packages.${system}.nvim
+                  ];
                   homeDirectory = "/home/${user}";
                   stateVersion = stateVersion;
 		  sessionVariables = {
@@ -56,7 +62,6 @@
                 programs.home-manager.enable = true;
                 programs.tmux.enable = true;
                 programs.alacritty.enable = true;
-
                 nixpkgs.config.allowUnfree = true;
 
                 imports = [

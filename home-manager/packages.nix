@@ -23,7 +23,6 @@
         fastfetch
         lazygit
         posting
-        neovim
         tmux
         zsh
         yazi
