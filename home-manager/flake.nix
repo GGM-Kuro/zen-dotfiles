@@ -16,10 +16,19 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, nixpkgs-unstable, home-manager, nvim-config,  flake-utils, ... }:
+  outputs =
+    {
+      nixpkgs,
+      nixpkgs-unstable,
+      home-manager,
+      nvim-config,
+      flake-utils,
+      ...
+    }:
     let
 
-      mkHomeConfig = system:
+      mkHomeConfig =
+        system:
         let
           stateVersion = "23.05";
           user = "kuro";
@@ -30,43 +39,41 @@
 
           };
 
-
           unstablePkgs = import nixpkgs-unstable {
             inherit system;
             config.allowUnfree = true;
           };
         in
-	    home-manager.lib.homeManagerConfiguration {
-            inherit pkgs;
-            extraSpecialArgs = {
-              inherit unstablePkgs;
-            };
-
-            
-            modules = [
-              {
-                home = {
-                  username = user;
-                  packages = [
-                    nvim-config.packages.${system}.nvim
-                  ];
-                  homeDirectory = "/home/${user}";
-                  stateVersion = stateVersion;
-                };
-
-
-                programs.home-manager.enable = true;
-                programs.tmux.enable = true;
-                programs.alacritty.enable = true;
-                nixpkgs.config.allowUnfree = true;
-
-                imports = [
-                  ./programs.nix
-                  ./packages.nix
-                ];
-              }
-            ];
+        home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = {
+            inherit unstablePkgs;
           };
+
+          modules = [
+            {
+              home = {
+                username = user;
+                shellAliases = import ./aliases.nix;
+                packages = [
+                  nvim-config.packages.${system}.nvim
+                ];
+                homeDirectory = "/home/${user}";
+                stateVersion = stateVersion;
+              };
+
+              programs.home-manager.enable = true;
+              programs.tmux.enable = true;
+              programs.alacritty.enable = true;
+              nixpkgs.config.allowUnfree = true;
+
+              imports = [
+                ./programs.nix
+                ./packages.nix
+              ];
+            }
+          ];
+        };
     in
     {
       homeConfigurations = {
@@ -76,4 +83,3 @@
       };
     };
 }
-
