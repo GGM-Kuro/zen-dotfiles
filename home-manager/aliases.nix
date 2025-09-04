@@ -1,3 +1,4 @@
+{ system } : 
 {
 # nvim
 
@@ -15,8 +16,12 @@
  ls="lsd --group-dirs=first";
  cat="bat";
  "~"="cd ~";
+
+
  dotfiles="cd $DOTFILES_PATH";
  code="cd $PROJECTS && clear";
  ".f"="cd $DOTFILES_PATH";
  t="tmux";
+
+ nixdev= "nix develop . --system ${system} --command zsh";
 }

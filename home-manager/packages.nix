@@ -15,9 +15,11 @@
     git
     # ripgrep
     zoxide
+    podman
     bash
     cargo
     openssh
+    xclip
     unzip
     uv
 

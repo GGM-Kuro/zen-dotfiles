@@ -25,11 +25,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756903364,
-        "narHash": "sha256-vZh/YH2D7oDFek10r0TbGn3qJrqGv69sSP+oF8PFDqQ=",
+        "lastModified": 1756954499,
+        "narHash": "sha256-Pg4xBHzvzNY8l9x/rLWoJMnIR8ebG+xeU+IyqThIkqU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6159629d05a0e92bb7fb7211e74106ae1d552401",
+        "rev": "ed1a98c375450dfccf427adacd2bfd1a7b22eb25",
         "type": "github"
       },
       "original": {
@@ -95,11 +95,11 @@
         "plugins-snakcs.nvim": "plugins-snakcs.nvim"
       },
       "locked": {
-        "lastModified": 1756939922,
-        "narHash": "sha256-AQByYHWmXhK+Jh+jMy1MZPmvZDJccF3GZz12KG183vY=",
+        "lastModified": 1756956880,
+        "narHash": "sha256-lhwzWzcrh5mcoyFiVDqoL6vDsI0s5a7AUZQM5Ynzm/g=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "0a061b8b85531b0278a79215066ac4af2b1ed280",
+        "rev": "588577c6b5a812ca2027b9e225e606a4eceb305e",
         "type": "github"
       },
       "original": {

@@ -54,7 +54,7 @@
             {
               home = {
                 username = user;
-                shellAliases = import ./aliases.nix;
+                shellAliases = import ./aliases.nix { inherit system; };
                 packages = [
                   nvim-config.packages.${system}.nvim
                 ];
