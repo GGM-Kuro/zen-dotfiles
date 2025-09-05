@@ -17,6 +17,13 @@
  cat="bat";
  "~"="cd ~";
 
+# UV
+ uvenv="uv venv";
+ uvinstall="uv pip install";
+ uvrun="uv run";
+ pipenv="source .venv/bin/activate";
+ 
+
 
  dotfiles="cd $DOTFILES_PATH";
  code="cd $PROJECTS && clear";
