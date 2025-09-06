@@ -1,7 +1,9 @@
 function cdd() {
 	cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
 }
-
+pdf() {
+      /mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe $(wslpath -w "$1")
+    }
 
 function recent_dirs() {
 	# This script depends on pushd. It works better with autopush enabled in ZSH

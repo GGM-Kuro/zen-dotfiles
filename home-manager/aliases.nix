@@ -22,7 +22,6 @@
  uvinstall="uv pip install";
  uvrun="uv run";
  pipenv="source .venv/bin/activate";
- 
 
 
  dotfiles="cd $DOTFILES_PATH";
@@ -32,3 +31,4 @@
 
  nixdev= "nix develop . --system ${system} --command zsh";
 }
+
