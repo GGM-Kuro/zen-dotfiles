@@ -10,7 +10,7 @@ in {
 
    programs = {
        zsh = import ./programs/zsh.nix {
-        inherit config;
+        inherit config pkgs;
        };
        git = import ./programs/git.nix {
         inherit config;

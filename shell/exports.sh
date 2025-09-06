@@ -7,7 +7,7 @@
         # Custom
         # ------------------------------------------------------------------------------
 
-        export WINHOME="/mnt/c/Users/kuro"
+        export WINHOME="/mnt/d/kuro"
         export PROJECTS="$HOME/code"
 
         if [[ "$(uname)" == "Darwin" ]]; then

@@ -1,7 +1,5 @@
 {
-  config,
   pkgs,
-  lib,
   ...
 }:
 {
@@ -13,6 +11,9 @@
     lsd
     fzf
     git
+    jdk
+    fontconfig
+    corefonts
     # ripgrep
     zoxide
     podman
