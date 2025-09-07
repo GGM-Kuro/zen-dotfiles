@@ -7,7 +7,8 @@
         # Custom
         # ------------------------------------------------------------------------------
 
-        export WINHOME="/mnt/d/kuro"
+        [[ -f "/mnt/d/kuro" ]] || export WINHOME="/mnt/c/kuro"
+
         export PROJECTS="$HOME/code"
 
         if [[ "$(uname)" == "Darwin" ]]; then
