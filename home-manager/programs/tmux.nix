@@ -4,7 +4,6 @@
   terminal = "tmux-256color";
 
   historyLimit = 8000;
-  keyMode = "vi";
   escapeTime = 1;
   baseIndex = 1;
   shortcut = "a";
@@ -22,15 +21,6 @@
          # Fix colors for the terminal
          set -g terminal-overrides ',xterm-256color:Tc'
 
-         # Keymaps
-         unbind C-x
-         set -g prefix C-a
-         bind C-a send-prefix
-         unbind %
-         unbind '"'
-         bind v split-window -h -c '#{pane_current_path}'
-         bind d split-window -v -c '#{pane_current_path}'
-         set -g @resurrect-save 'prefix + S'
          
 
 
@@ -64,5 +54,18 @@
          # customs
          set -g status-right "#($DOTFILES_PATH/scripts/tmux_target_widget.sh)"
 
+
+         # Keymaps
+         unbind C-x
+         set -g prefix C-a
+         bind C-a send-prefix
+         unbind %
+         unbind '"'
+         unbind -T root C-n
+         unbind -T copy-mode C-n
+         unbind-key C-n
+         bind v split-window -h -c '#{pane_current_path}'
+         bind d split-window -v -c '#{pane_current_path}'
+         set -g @resurrect-save 'prefix + S'
   '';
 }
