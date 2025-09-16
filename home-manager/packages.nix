@@ -17,6 +17,7 @@
     # ripgrep
     zoxide
     podman
+    sqlite
     bash
     cargo
     openssh
