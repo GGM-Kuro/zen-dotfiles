@@ -18,6 +18,7 @@
     zoxide
     podman
     sqlite
+    flutter
     bash
     cargo
     openssh
