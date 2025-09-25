@@ -22,6 +22,9 @@
           eval "$($BREW_BIN/brew shellenv)"
         fi
 
+        if [[ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
+          . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+        fi
 
 
         # ------------------------------------------------------------------------------
@@ -51,6 +54,7 @@
         # ------------------------------------------------------------------------------
 
         path=(
+          "$HOME/.local/state/nix/profiles/home-manager/home-path/bin"
         	"/home/linuxbrew/.linuxbrew/bin"
         	"/usr/local/opt/ruby/bin"
         	"/usr/local/bin"
