@@ -6,7 +6,7 @@
 {
   enable = true;
   dirHashes = {
-    projects = "$HOME/projects";
+    CODE = "$HOME/code";
   };
   initContent = ''
     export JAVA_HOME=${pkgs.jdk}

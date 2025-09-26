@@ -29,6 +29,7 @@
     # programs
     fastfetch
     lazygit
+    lazydocker
     posting
     tmux
     zsh
@@ -36,5 +37,6 @@
 
     # fonts
     nerd-fonts.mononoki
+    nerd-fonts.fira-code
   ];
 }
