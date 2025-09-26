@@ -14,7 +14,8 @@
     jdk
     fontconfig
     corefonts
-    # ripgrep
+    ripgrep
+    docker
     zoxide
     podman
     sqlite

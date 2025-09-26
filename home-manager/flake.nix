@@ -32,7 +32,6 @@
         let
           stateVersion = "23.05";
           user = "kuro";
-          users.defaultUserShell = pkgs.zsh;
           pkgs = import nixpkgs {
 
             inherit system;
