@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Inicia el daemon si no está corriendo
+if ! pgrep -x "swww-daemon" > /dev/null; then
+    swww-daemon &
+    sleep 1
+fi
+
+# Carpeta de fondos
+WALLPAPER_DIR="$DOTFILES_PATH/wallpapers"
+
+# Verifica que haya imágenes
+if ! find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | grep -q .; then
+    echo "No se encontraron imágenes en $WALLPAPER_DIR"
+    exit 1
+fi
+
+# Obtiene todos los nombres de monitores (outputs)
+OUTPUTS=$(hyprctl monitors -j | jq -r '.[].name')
+
+# Aplica fondo diferente por cada monitor, con pequeña espera
+for MON in $OUTPUTS; do
+    WALL=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n 1)
+    
+    echo "Asignando fondo $WALL al monitor $MON"
+
+    swww img "$WALL" \
+        --transition-type any \
+        --transition-duration 2 \
+        --outputs "$MON"
+
+    # Espera breve para evitar conflictos de buffers
+    sleep 0.3
+done

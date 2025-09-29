@@ -31,6 +31,7 @@
     fastfetch
     imagemagick
     jq
+    tree
     
 
     ##imv  vs  ranger
@@ -45,7 +46,5 @@
     yazi
 
     # fonts
-    nerd-fonts.mononoki
-    nerd-fonts.fira-code
   ];
 }

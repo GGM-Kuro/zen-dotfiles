@@ -6,10 +6,6 @@ for f in "$DOTFILES_PATH"/shell/bash/*.sh; do
 	[ -f "$f" ] && source "$f"
 done
 
-if [ -z "$BASH_EXECUTION_STRING" ] && [ "$SHELL" != "$HOME/.nix-profile/bin/zsh" ]; then
-  exec $HOME/.nix-profile/bin/zsh
-fi
-
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
       source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
