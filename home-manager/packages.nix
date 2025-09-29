@@ -26,6 +26,14 @@
     xclip
     unzip
     uv
+    btop
+    dust
+    fastfetch
+    imagemagick
+    jq
+    
+
+    ##imv  vs  ranger
 
     # programs
     fastfetch
