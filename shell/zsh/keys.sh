@@ -1,5 +1,5 @@
 # Keybindings
-bindkey -v
+bindkey -e
 
 bindkey '^p' history-search-backward
 
