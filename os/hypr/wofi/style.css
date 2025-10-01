@@ -1,0 +1,50 @@
+* {
+	font-family: "FiraCode", monospace;
+}
+
+window {
+	background: transparent;
+}
+
+#input {
+	margin: 5px;
+	border-radius: 8px;
+	border: none;
+	background-color: #738091;
+	color: white;
+}
+
+#inner-box {
+	background-color: #383C4A;
+    border-radius: 18px;
+}
+
+#outer-box {
+	margin: 2px;
+    opacity: 0.9;
+	padding: 10px;
+    border-radius: 8px;
+	background-color: #383C4A;
+}
+
+#scroll {
+	margin: 8px;
+}
+
+#text {
+	padding: 4px;
+	color: white;
+}
+
+#entry:nth-child(even){
+	background-color: #404552;
+}
+
+#entry:selected {
+	background-color: #4C566A;
+    padding: 5px;
+}
+
+#text:selected {
+	background: transparent;
+}
