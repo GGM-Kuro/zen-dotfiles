@@ -2,11 +2,13 @@ chromium/
 google-chrome/
 environment.d/
 fontconfig/
+dconf/
 go/
 kde.org/
 pacman/
 pamac/
 session/
+pulse/
 systemd/user
 mimeapps.list
 tool_state
