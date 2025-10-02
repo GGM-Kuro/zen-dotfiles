@@ -1,0 +1,12 @@
+chromium/
+google-chrome/
+environment.d/
+fontconfig/
+go/
+kde.org/
+pacman/
+pamac/
+session/
+systemd/user
+mimeapps.list
+tool_state

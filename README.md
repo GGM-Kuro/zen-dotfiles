@@ -59,4 +59,5 @@ cd .config/home-files
 home-manager switch --flake .#x86_64 -b bakcup 
 ```
 
-
+# TODO-LIST
+    - update pacman, pamac config and fix sytem-links for both
