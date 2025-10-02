@@ -1,0 +1,128 @@
+{
+  "position": "top",
+  "height": 32,
+  "margin": 0,
+  "padding": 8,
+  "font": {
+    "family": "JetBrainsMono Nerd Font",
+    "size": 14
+  },
+  "colors": {
+    "background": "#1e1e2e",
+    "text": "#ffffff"
+  },
+  "modules": {
+    "left": [
+      "workspaces"
+    ],
+    "center": [
+      "clock"
+    ],
+    "right": [
+      "battery",
+      "volume",
+      "network"
+    ]
+  },
+  "workspaces": {
+    "style": "box",
+    "active_color": "#89b4fa",
+    "inactive_color": "#585b70",
+    "urgent_color": "#f38ba8"
+  },
+  "clock": {
+    "format": " %H:%M  %A, %d %b"
+  },
+  "battery": {
+    "format": "⚡ %percentage%%",
+    "icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "show_charging": true
+  },
+  "volume": {
+    "format": "🔊 %volume%%"
+  },
+  "network": {
+    "format": "📶 %interface% %essid%"
+  },
+  "theme.bar.location": "top",
+  "bar.launcher.autoDetectIcon": true,
+  "bar.workspaces.monitorSpecific": false,
+  "theme.bar.floating": true,
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.enableShadow": false,
+  "theme.bar.layer": "top",
+  "bar.windowtitle.custom_title": true,
+  "bar.windowtitle.truncation": true,
+  "bar.windowtitle.truncation_size": 10,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "systray",
+        "notifications",
+        "power"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "bar.network.showWifiInfo": true,
+  "theme.bar.buttons.network.enableBorder": false,
+  "bar.network.label": true,
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "theme.bar.buttons.modules.power.enableBorder": true,
+  "theme.bar.border.width": "0.5em",
+  "theme.bar.shadowMargins": "0px 0px 2px 0px",
+  "theme.bar.buttons.y_margins": "0.3em",
+  "theme.bar.buttons.spacing": "0.15em",
+  "theme.bar.outer_spacing": "0.6em",
+  "theme.bar.transparent": true,
+  "theme.bar.buttons.monochrome": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.show_icons": true,
+  "bar.workspaces.numbered_active_indicator": "underline",
+  "bar.workspaces.showAllActive": true,
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "menus.clock.weather.enabled": false
+}
