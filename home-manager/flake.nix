@@ -64,7 +64,6 @@
 
               programs.home-manager.enable = true;
               programs.tmux.enable = true;
-              programs.alacritty.enable = true;
               nixpkgs.config.allowUnfree = true;
 
               imports = [
