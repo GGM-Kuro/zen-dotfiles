@@ -65,7 +65,7 @@
         	"/usr/bin"
         	"/usr/sbin"
         	"/sbin"
-            "$ANDROID_HOME/emulator"
+            "$ANDROID_SDK_HOME/emulator"
 
         	"$path"
         )
