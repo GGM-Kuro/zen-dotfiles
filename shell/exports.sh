@@ -10,8 +10,8 @@
         [[ -f "/mnt/d/kuro" ]] || export WINHOME="/mnt/c/kuro"
 
         export PROJECTS="$HOME/code"
-        export ANDROID_HOME="$HOME/.config/.android/"
-        export ANDROID_SDK_HOME="$HOME/Android/Sdk/"
+        export ANDROID_HOME="$HOME/.config/.android"
+        export ANDROID_SDK_HOME="$HOME/Android/Sdk"
 
         if [[ "$(uname)" == "Darwin" ]]; then
           export BREW_BIN="/opt/homebrew/bin"
