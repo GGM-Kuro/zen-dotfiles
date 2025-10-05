@@ -95,11 +95,11 @@
         "plugins-snakcs.nvim": "plugins-snakcs.nvim"
       },
       "locked": {
-        "lastModified": 1759637748,
-        "narHash": "sha256-qnonm1gIlEoXL/1SFs3jH/1YAd66dVesrqWsBw8NN10=",
+        "lastModified": 1759638706,
+        "narHash": "sha256-5057msb7OP2j3N7l06oP0VC2vQU3yViDFseFXy3pyS4=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "fa15c2711956527111129d46cc186b9f34d71974",
+        "rev": "8d07bc256dd9aa4be6b24d7400310b6412a8f67f",
         "type": "github"
       },
       "original": {
