@@ -25,11 +25,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1759573136,
-        "narHash": "sha256-ILSPD0Dm8p0w0fCVzOx98ZH8yFDrR75GmwmH3fS2VnE=",
+        "lastModified": 1759700337,
+        "narHash": "sha256-2ETQ6PWs/MRiYc3dXAI0rXOVdUEBoz5QtPdr8s1qiNY=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5f06ceafc6c9b773a776b9195c3f47bbe1defa43",
+        "rev": "3c3076b1c1b941715302d731a4a978bca88fa16f",
         "type": "github"
       },
       "original": {
@@ -71,11 +71,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1759570798,
-        "narHash": "sha256-kbkzsUKYzKhuvMOuxt/aTwWU2mnrwoY964yN3Y4dE98=",
+        "lastModified": 1759632233,
+        "narHash": "sha256-krgZxGAIIIKFJS+UB0l8do3sYUDWJc75M72tepmVMzE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0d4f673a88f8405ae14484e6a1ea870e0ba4ca26",
+        "rev": "d7f52a7a640bc54c7bb414cca603835bf8dd4b10",
         "type": "github"
       },
       "original": {
@@ -95,11 +95,11 @@
         "plugins-snakcs.nvim": "plugins-snakcs.nvim"
       },
       "locked": {
-        "lastModified": 1759646432,
-        "narHash": "sha256-NsNLmUeuu7oniKB5vjRF9iaWbgG+TnWHlgTNZWYWPfg=",
+        "lastModified": 1759701733,
+        "narHash": "sha256-hCkNKu2wkmUlmWPmarO/Rrfm+tsLfiBsT6ts1LwTjAw=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "a611721e85f845ca35dedfbcd3395e2c57610e07",
+        "rev": "552605420d1b55cf720557e7a7a09b11aa9b8ac6",
         "type": "github"
       },
       "original": {
