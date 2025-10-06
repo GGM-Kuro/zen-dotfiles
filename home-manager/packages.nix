@@ -32,7 +32,7 @@
     imagemagick
     jq
     tree
-    
+
 
     ##imv  vs  ranger
 
