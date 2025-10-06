@@ -95,11 +95,11 @@
         "plugins-quicktype.nvim": "plugins-quicktype.nvim"
       },
       "locked": {
-        "lastModified": 1759719119,
-        "narHash": "sha256-JKwmMPyORn6aX189Q66jDpa57mgwYKKVCHLiE68SQzc=",
+        "lastModified": 1759724423,
+        "narHash": "sha256-Mc6NXoUKVzjgp2HcOcRvlPxPHCo7rQCUoyc6oR8t2IA=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "df182135a995f41194162a33c7160280ee96a957",
+        "rev": "1f6b12b35ca4596495ebd206147193c75fbab541",
         "type": "github"
       },
       "original": {
