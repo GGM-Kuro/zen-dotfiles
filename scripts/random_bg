@@ -21,7 +21,7 @@ OUTPUTS=$(hyprctl monitors -j | jq -r '.[].name')
 # Aplica fondo diferente por cada monitor, con pequeña espera
 for MON in $OUTPUTS; do
     WALL=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n 1)
-    
+
     echo "Asignando fondo $WALL al monitor $MON"
 
     swww img "$WALL" \
