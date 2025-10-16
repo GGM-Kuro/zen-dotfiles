@@ -10,6 +10,7 @@
         [[ -f "/mnt/d/kuro" ]] || export WINHOME="/mnt/c/kuro"
 
         export PROJECTS="$HOME/code"
+        export SCRIPTS_PATH="$DOTFILES_PATH/scripts"
         export ANDROID_SDK_HOME="$HOME/.config/.android"
         export ANDROID_SDK="$HOME/Android/Sdk"
 

@@ -92,14 +92,15 @@
           "nixpkgs"
         ],
         "plugins-debugmaster": "plugins-debugmaster",
-        "plugins-quicktype": "plugins-quicktype"
+        "plugins-quicktype": "plugins-quicktype",
+        "plugins-winpick": "plugins-winpick"
       },
       "locked": {
-        "lastModified": 1759809826,
-        "narHash": "sha256-PBCuAL0OcoLTf0FFUYeKRYwxcJ2etfWDa79k2bTfMVo=",
+        "lastModified": 1759813296,
+        "narHash": "sha256-v2PNnjrmbbNc25gZJSuHTbd/2GJqtocipBezgYjnts0=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "0ab023b13ef34e56aa9ff720abc4c994d58284fe",
+        "rev": "a982f200ea9d83b2b9e9f7dc5d985ac761a19e7c",
         "type": "github"
       },
       "original": {
@@ -137,6 +138,22 @@
       "original": {
         "owner": "midoBB",
         "repo": "nvim-quicktype",
+        "type": "github"
+      }
+    },
+    "plugins-winpick": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1751282954,
+        "narHash": "sha256-YXwM0hzqyIob6wMumkqqsPp2nRMuPxYnrHW4ihU6htw=",
+        "owner": "MarcusGrass",
+        "repo": "nvim_winpick",
+        "rev": "18037e9f5ce417bd75d16ebbf70787bcc478c249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MarcusGrass",
+        "repo": "nvim_winpick",
         "type": "github"
       }
     },

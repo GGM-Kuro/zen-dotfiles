@@ -1,0 +1,10 @@
+#!/bin/sh
+
+IFACE=$(/usr/bin/ip addr show | awk '/ens33/ {print $2; exit}' | sed 's/://')
+
+
+if [ "$IFACE" = "ens33" ]; then
+    echo "󰌘 Host: $(/usr/bin/ip addr show dev ens33 | grep -oP 'inet \K[\d.]+')"
+else
+    echo "󰌙  vpn off"
+fi

@@ -1,7 +1,8 @@
-{ system } : 
+{ system } :
 {
-# nvim
 
+
+# nvim
  v="nvim";
  vim="nvim";
  vi="nvim";
@@ -23,6 +24,8 @@
  uvrun="uv run";
  pipenv="source .venv/bin/activate";
 
+# Flutter
+  pubspec="flutter pub add";
 
  dotfiles="cd $DOTFILES_PATH";
  code="cd $PROJECTS && clear";
