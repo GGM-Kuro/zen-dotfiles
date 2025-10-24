@@ -1,10 +1,19 @@
-{config}: {
+{ config }:
+{
   enable = true;
-  userName = "Andres Vargas";
-  userEmail = "devandresvargas@gmail.com";
-  extraConfig = {
-    init = {defaultBranch = "main";};
-    branch = {autosetuprebase = "always";};
-    pull = {rebase = true;};
+  settings.user = {
+    name = "Andres Vargas";
+    email = "devandresvargas@gmail.com";
+  };
+  settings = {
+    init = {
+      defaultBranch = "main";
+    };
+    branch = {
+      autosetuprebase = "always";
+    };
+    pull = {
+      rebase = true;
+    };
   };
 }
