@@ -92,16 +92,17 @@
           "nixpkgs"
         ],
         "plugins-debugmaster": "plugins-debugmaster",
+        "plugins-neotest": "plugins-neotest",
         "plugins-quicktype": "plugins-quicktype",
         "plugins-snacks": "plugins-snacks",
         "plugins-winpick": "plugins-winpick"
       },
       "locked": {
-        "lastModified": 1761288007,
-        "narHash": "sha256-52Ufach8hEnBvTYeHoBfhmro0p9dUN4nXeMHiwxmUyE=",
+        "lastModified": 1761291774,
+        "narHash": "sha256-81Fz3rvI2P6GD8vHmb9FF54aI/rfEKQFIQIkSPvEB/s=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "b59f826d74696919b88a31d7ceb4c6705feaf0e5",
+        "rev": "7a76762ff7748cab4e5b646bdfb3b660a275b1b8",
         "type": "github"
       },
       "original": {
@@ -123,6 +124,22 @@
       "original": {
         "owner": "miroshQa",
         "repo": "debugmaster.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-neotest": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760257881,
+        "narHash": "sha256-IzR32B0B+0DYGc7SRgIalWNJjMCM51NjcL0RT7SlzdU=",
+        "owner": "nvim-neotest",
+        "repo": "neotest",
+        "rev": "7166dc36af2760a76479e021e0521e23f62165f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-neotest",
+        "repo": "neotest",
         "type": "github"
       }
     },
