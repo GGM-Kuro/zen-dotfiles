@@ -93,14 +93,15 @@
         ],
         "plugins-debugmaster": "plugins-debugmaster",
         "plugins-quicktype": "plugins-quicktype",
+        "plugins-snacks": "plugins-snacks",
         "plugins-winpick": "plugins-winpick"
       },
       "locked": {
-        "lastModified": 1761280408,
-        "narHash": "sha256-qMwGK2D14D8zaBSrXkwAKoQnEQM00Ta56RCO0XmdXCQ=",
+        "lastModified": 1761286564,
+        "narHash": "sha256-1ulABaCq+go5hQd8iaxtDYZ2UFCqT4MVuDkxT1nQtTA=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "65fb158686d059e8a3b6da9143dd7c8de8487bb4",
+        "rev": "9e6e2d854fcc2b15e6676f40425569135f2baccb",
         "type": "github"
       },
       "original": {
@@ -138,6 +139,22 @@
       "original": {
         "owner": "midoBB",
         "repo": "nvim-quicktype",
+        "type": "github"
+      }
+    },
+    "plugins-snacks": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761284319,
+        "narHash": "sha256-oXoLw3Iibp8GENe6O/OhU7jRdHLs+keau23vfMWfVzI=",
+        "owner": "folke",
+        "repo": "snacks.nvim",
+        "rev": "b029511abb1359da28de45faeeec400f419d7ee7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "snacks.nvim",
         "type": "github"
       }
     },
