@@ -96,11 +96,11 @@
         "plugins-winpick": "plugins-winpick"
       },
       "locked": {
-        "lastModified": 1761272137,
-        "narHash": "sha256-1dmGNW6q8KP658x/3SCHWAk3hUWCrD684fENMTO8qWA=",
+        "lastModified": 1761274382,
+        "narHash": "sha256-8j46gAfNhfrBAvRe9CFZS6/AmxE8vLeujhWWbSzUyvg=",
         "owner": "GGM-Kuro",
         "repo": "zen-nvim",
-        "rev": "d4d137bc7e8cc2a00f4f701663fce4015b5ffaf4",
+        "rev": "c8fdb2dbdfb0fa9d2d71770786f2340ce864861a",
         "type": "github"
       },
       "original": {
