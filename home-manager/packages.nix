@@ -12,6 +12,7 @@
     lsd
     fzf
     git
+    pnpm
     nixd
     quicktype
     jdk
