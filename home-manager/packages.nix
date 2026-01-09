@@ -8,7 +8,7 @@
 
     # system utilities
     bat
-    nixfmt-rfc-style
+    nixfmt
     lsd
     fzf
     git
@@ -20,6 +20,7 @@
     fontconfig
     corefonts
     ripgrep
+    ruff
     docker
     zoxide
     podman
