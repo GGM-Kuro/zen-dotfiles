@@ -29,6 +29,7 @@
     bash
     cargo
     openssh
+    pureref
     xclip
     fd
     gh
