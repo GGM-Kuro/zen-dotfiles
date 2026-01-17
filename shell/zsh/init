@@ -14,6 +14,3 @@ for f in "$DOTFILES_PATH"/shell/zsh/*.sh; do
 done
 
 
-if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
-      source "$HOME/.nix-profile/etc/profile.d/nix.sh"
-fi

@@ -4,10 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nvim-config = {
-      url = "github:GGM-Kuro/zen-nvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nvim-config = {
+    #   url = "github:GGM-Kuro/zen-nvim";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -21,7 +21,7 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
-      nvim-config,
+      # nvim-config,
       flake-utils,
       ...
     }:
@@ -56,7 +56,7 @@
                 username = user;
                 shellAliases = import ./aliases.nix { inherit pkgs; };
                 packages = [
-                  nvim-config.packages.${system}.nvim
+                  # nvim-config.packages.${system}.nvim
                 ];
                 homeDirectory = "/home/${user}";
                 stateVersion = stateVersion;
@@ -69,6 +69,7 @@
               imports = [
                 ./programs.nix
                 ./packages.nix
+		# ./programs/xdg.nix
               ];
             }
           ];

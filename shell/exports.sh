@@ -25,14 +25,11 @@
           eval "$($BREW_BIN/brew shellenv)"
         fi
 
-        if [[ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
-          . "$HOME/.nix-profile/etc/profile.d/nix.sh"
-        fi
-
 
         # ------------------------------------------------------------------------------
         # Terminal
         # ------------------------------------------------------------------------------
+	
 
         export XDG_CONFIG_HOME=$HOME/.config
         export INPUTRC="$DOTFILES_PATH/shell/bash/.inputrc"
@@ -57,16 +54,16 @@
         # ------------------------------------------------------------------------------
 
         path=(
-          "$HOME/.local/state/nix/profiles/home-manager/home-path/bin"
         	"/home/linuxbrew/.linuxbrew/bin"
         	"/usr/local/opt/ruby/bin"
         	"/usr/local/bin"
         	"/usr/local/sbin"
+		"$HOME/.nix-profile/bin"
         	"/bin"
         	"/usr/bin"
         	"/usr/sbin"
         	"/sbin"
-            "$ANDROID_SDK/emulator"
+                "$ANDROID_SDK/emulator"
 
         	"$path"
         )

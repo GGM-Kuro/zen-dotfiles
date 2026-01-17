@@ -11,6 +11,7 @@
     nixfmt
     lsd
     fzf
+    gcc
     git
     pnpm
     nixd
