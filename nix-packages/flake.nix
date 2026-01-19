@@ -5,14 +5,16 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
       };
-    in {
+    in
+    {
       packages.${system}.default = pkgs.buildEnv {
         name = "user-packages";
         paths = with pkgs; [
@@ -24,6 +26,10 @@
           nixfmt
           lsd
           fzf
+          omnisharp-roslyn
+          cowsay
+          opencode
+          lsof
           gcc
           git
           pnpm
@@ -35,14 +41,11 @@
           corefonts
           ripgrep
           ruff
-          docker
           zoxide
-          podman
+          tree-sitter
           sqlite
           flutter
-          bash
           cargo
-          openssh
           pureref
           xclip
           fd
@@ -62,11 +65,10 @@
           # Programs
           # ------------------------------
           lazygit
-          lazydocker
           posting
           tmux
-          zsh
           yazi
+          claude-code
 
         ];
       };
