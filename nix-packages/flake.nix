@@ -40,6 +40,8 @@
           fontconfig
           corefonts
           ripgrep
+          neofetch
+          ranger
           ruff
           zoxide
           tree-sitter
